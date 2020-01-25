@@ -1,18 +1,43 @@
+/*
+0-600  -> phone
+600-900 -> Tablet portrait
+900-1200 -> Tablet landscape
+[1200 - 1800] normal styles apply
+1800+ Big screen
+*/
+/*$breakepoint choise
+-phone
+-tab-port
+-tab-land
+-big-desktop 
+*/
+/* 1em = 16px*/
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: inherit; }
+  box-sizing: border-box; }
 
 body {
-  box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
   font-weight: 400; }
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 37.5em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 80%; } }
 
 @keyframes rotate {
   0% {
@@ -51,7 +76,7 @@ html {
   .thirdheading::before {
     content: "";
     display: inline;
-    left: 23%;
+    left: 20%;
     top: 40%;
     position: absolute;
     width: 10px;
@@ -113,7 +138,9 @@ html {
     color: rgba(105, 105, 105, 0.479);
     line-height: 27px;
     font-size: 1.4rem;
-    font-weight: 400; }
+    font-weight: 400;
+    letter-spacing: 2px;
+    font-family: 'Nunito Sans', sans-serif; }
 
 .days {
   text-align: start;
