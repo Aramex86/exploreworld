@@ -17,9 +17,10 @@
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: inherit; }
 
 body {
+  box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
   font-weight: 400; }
@@ -28,7 +29,7 @@ html {
   font-size: 62.5%; }
   @media (max-width: 37.5em) {
     html {
-      font-size: 50%; } }
+      font-size: 43.75%; } }
   @media (max-width: 56.25em) {
     html {
       font-size: 50%; } }
@@ -94,18 +95,19 @@ html {
     flex-direction: column;
     cursor: pointer; }
   .card__wrap-img {
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     .card__wrap-img::before {
       content: "";
       position: absolute;
       width: 2%;
       height: 4px;
       background-color: #ecec22;
-      bottom: 2px;
+      bottom: -2px;
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 1;
-      transition: width .5s ease;
+      transition: width 1s ease;
       opacity: 0; }
     .card__wrap-img:hover::before {
       width: 100%;
@@ -115,6 +117,9 @@ html {
     width: 100%;
     height: 18.5rem;
     object-fit: cover; }
+    .card__wrap-img img:hover {
+      transform: scale(1.2);
+      transition: all 1s; }
   .card__wrap-heading {
     position: relative;
     padding: 2rem 0;
@@ -147,6 +152,39 @@ html {
   font-size: 1.2rem;
   color: rgba(105, 105, 105, 0.479);
   margin-left: 29px; }
+
+.header__navmobile {
+  position: absolute;
+  width: 75%;
+  height: 100vh;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(218, 218, 218, 0.85); }
+  .header__navmobile-list {
+    list-style: none;
+    padding: 2rem 0; }
+  .header__navmobile-item {
+    padding: 2rem 0;
+    cursor: pointer;
+    letter-spacing: 2px; }
+  .header__navmobile-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.8rem; }
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 9px; }
+  .close span {
+    width: 20px;
+    height: 2px;
+    background: #000;
+    display: block; }
 
 .header {
   display: flex;

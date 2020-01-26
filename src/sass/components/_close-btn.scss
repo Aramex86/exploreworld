@@ -1,0 +1,11 @@
+.close{
+	position: absolute;
+    right: 15px;
+    top: 9px;
+    & span{
+    	width: 20px;
+    	height: 2px;
+    	background: #000;
+    	display: block
+    }
+}

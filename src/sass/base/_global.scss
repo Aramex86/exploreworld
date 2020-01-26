@@ -3,11 +3,11 @@
 *::after{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: inherit;
 }
 
 body{
-    //box-sizing: border-box;
+    box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
     font-size: 1.5rem;
     font-weight: 400;
@@ -17,7 +17,7 @@ html{
     font-size: 62.5%; //1rem = 10px; 10px/16px = 62.5%
 
     @include respond(phone){
-    	font-size: 50%;
+    	font-size: 43.75%; //1rem = 7px; 7px/16px = 43.75%;
     }
      @include respond(tab-port){
     	font-size: 50%; //1rem = 8px; 8px/16px = 50%;
