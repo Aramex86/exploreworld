@@ -1,0 +1,108 @@
+.header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 2px solid $header-line;
+    @include respond(small-dev){
+        justify-content: center;
+        padding: 1rem 0;
+        align-items: center;
+    }
+    
+    &__logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 20%;
+        @include respond(small-dev){
+        flex-basis: 100%;
+        justify-content: flex-start;
+    }
+
+        &-img{
+            margin-right: 1rem;
+        }
+        &-text{
+            font-weight: 700;
+            font-size: 1.8rem;
+            letter-spacing: 6px;
+        }
+    }
+    &__nav{
+        display: flex;
+        flex-basis: 60%;
+        justify-content: center;
+        align-items: center;
+        @include respond(small-dev){
+            display: none;
+        }
+
+        &-list{
+            display: flex;
+            list-style: none;
+        }
+        &-item{
+            position: relative;
+            padding: 2rem 2rem;
+            &::before{
+                content: "";
+                position: absolute;
+                bottom: -2px;
+                left: 7px;
+                opacity: 0;
+                width: 90%;
+                height: 3px;
+                background: $base-color;
+            }
+            &:hover::before{
+                transition: all 1s ease;
+                opacity: 1;
+            }
+        }
+        &-link{
+           text-decoration: none;
+           text-transform: uppercase;
+           color: $base-color;
+           font-weight: 700;
+        }
+    }
+    &__userwrapp{
+        display: flex;
+        flex-basis: 20%;
+        justify-content: center;
+        align-items: center;
+        @include respond(small-dev){
+        display: none;
+    }
+    }
+}
+
+.main__section{
+    width: 100%;
+    &-intro{
+       padding-top: 6rem;
+       
+    }
+    &-text{
+        width: 43%;
+        font-size: 1.8rem;
+        line-height: 30px;
+        color: $secont-text;
+        @include contentLeft;
+        @include respond(small-dev){
+        width: 100%;
+        margin: 0;
+        padding: 0 2rem;
+    }
+    }
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px 0;
+    border-top: 2px solid $header-line;
+}

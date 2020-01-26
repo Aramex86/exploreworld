@@ -1,0 +1,35 @@
+.header__navmobile{
+	position: absolute;
+    width: 75%;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    background: rgba(218, 218, 218, 0.85);
+    display: none;
+&-list{
+	list-style:none;
+	padding: 2rem 0;
+
+}
+&-item{
+	padding: 2rem 0;
+	cursor: pointer;
+	letter-spacing: 2px;
+}
+&-link{
+	text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+&-userwrapp{
+	display: flex;
+    margin-top: -14rem;
+    width: 100%;
+}
+
+}

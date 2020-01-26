@@ -1,0 +1,93 @@
+.card__wrap{
+    @include contentLeft;
+    margin-top: 5rem;
+    display: flex;
+    @include respond(small-dev){
+        flex-direction: column;
+        margin-left: 0;
+    }
+    &-card{
+        padding: 0 7px;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        @include respond(small-dev){
+       width: 100%;
+       padding: 0 2rem;
+       margin-bottom: 3rem;
+    }
+    }
+    &-img{
+        position: relative;
+        overflow: hidden;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 2%;
+            height: 4px;
+            background-color: $dots;
+            bottom: -2px;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            z-index: 1;
+            transition: width 1s ease;
+            opacity: 0;
+        }
+        &:hover::before{
+            width: 100%;
+            opacity: 1;
+        }
+    }
+    &-img img{
+        position: relative;
+        width: 100%;
+        height: 18.5rem;
+        object-fit: cover;
+        @include respond(small-dev){
+        height: auto;
+    }
+        &:hover{
+            transform: scale(1.2);
+            transition:all 1s ;
+        }
+    }
+    &-heading{
+        position: relative;
+        padding: 2rem 0;
+        text-align: center;
+        &::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            background: $base-color;
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            background: $base-color;
+        }
+
+    }
+    &-text{
+        width: 100%;
+        color: $secont-text;
+        line-height: 27px;
+        font-size: 1.4rem;
+        font-weight: 400;
+        letter-spacing: 2px;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+}
+
+.days{
+    text-align: start;
+    font-size: 1.2rem;
+    color: $secont-text;
+    margin-left: 29px;
+}

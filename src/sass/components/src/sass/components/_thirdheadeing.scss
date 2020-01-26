@@ -1,0 +1,17 @@
+.thirdheading{
+    position: relative;
+    font-size: 1.8rem;
+    letter-spacing: 5px;
+    padding: 1rem 0;
+    &::before{
+        content: "";
+        display: inline;
+        left: 20%;
+        top: 40%;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: #ecec22;
+    }
+
+}
