@@ -1,9 +1,0 @@
-.firstheading{
-    font-size: 4rem;
-    @include contentLeft;
-    @include respond(small-dev){
-       margin: 0;
-       font-size: 3rem;
-       padding: 0 2rem;
-    }
-}
