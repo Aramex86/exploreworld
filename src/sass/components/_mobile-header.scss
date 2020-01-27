@@ -10,6 +10,10 @@
     align-items: center;
     background: rgba(218, 218, 218, 0.85);
     transition: all .5s ease;
+    @include respond(phone){
+        position: fixed;
+        z-index: 3;
+    }
 &-list{
 	list-style:none;
 	padding: 2rem 0;
@@ -43,4 +47,18 @@
 
 .blur{
     filter: blur(3px);
+}
+
+//open-btn disapear
+
+.hide{
+    transform: translate(5rem,0);
+    transition: all .5s ease-in-out;
+    visibility: hidden;
+}
+
+.show{
+    transform: translate(0,0);
+    transition: all .5s ease-in-out;
+    visibility: visible;
 }

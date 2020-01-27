@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass src/sass/main.scss  src/css/style.css -w",
-    "devser": "live-server",
+    "devser": "browser-sync",
     "start": "npm-run-all --parallel devser watch:sass"
   },
   "author": "Slava",
@@ -19,5 +19,13 @@
   },
   "dependencies": {
     "live-server": "^1.2.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aramex86/exploreworld.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Aramex86/exploreworld/issues"
+  },
+  "homepage": "https://github.com/Aramex86/exploreworld#readme"
 }

@@ -2,7 +2,7 @@
     @include contentLeft;
     margin-top: 4rem;
     word-spacing: 11px;
-    @include respond(small-dev){
+    @include respond(phone){
         margin-left: 0;
         word-spacing: 0;
         padding: 0 2rem;

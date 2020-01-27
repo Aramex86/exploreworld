@@ -4,10 +4,11 @@
     top: 9px;
     width: 19px;
     height: 19px;
-    border:1px solid #000;
-    border-radius: 100%;
+    //border:1px solid #000;
+    //border-radius: 100%;
     display: flex;
-    align-items: center;
+	align-items: center;
+	z-index: 2;
     //justify-content: center;
     & span{
     	width: 17px;
@@ -26,4 +27,5 @@
 	    }
     }
 }
+
 
