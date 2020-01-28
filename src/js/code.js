@@ -29,11 +29,37 @@ const close = () =>{
 	});
 }
 
-const bigimage= (eventObj) => {
+const bigimage= () => {
+	//select all img
 	const image = document.getElementsByTagName('img');
 
+	const imgarr = [];
 
-	console.log(image);
+	imgarr.push(image);
+
+   	const imageselect = imgarr.map(function(index){
+		   for(let i =0; i< index.length; i++){
+			 
+			index[i].addEventListener('click',function(){
+				if(index[i] === index[0]){
+					const indonesia = document.querySelector('.indonesia__wrapp');
+					indonesia.classList.add('resizeimg');
+					indonesia.style.opacity = 1;
+					console.log(indonesia);
+				}
+			 });
+			
+			
+		   }
+			
+	   });
+	
+	
+
+
+	
+
+
 }
 
 
@@ -42,3 +68,4 @@ const bigimage= (eventObj) => {
 open();
 close();
 bigimage();
+

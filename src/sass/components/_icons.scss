@@ -12,9 +12,31 @@
 }
 
 
+
 .header__user-icon,
 .header__search-icon{
     width: 18px;
     height: 18px;
     margin-left: 1.5rem;
 }
+
+.footer__logo-icon{
+    width: 25px;
+    height: 25px;
+    margin-right: 1.5rem;
+}
+
+//////////////////
+/*Big page icons*/
+.arrow__back{
+    width:20px;
+    height: 20px;
+    fill: #fff;
+}
+
+.location{
+    width: 20px;
+    height: 20px;
+    fill: $dots;
+}
+

@@ -1,0 +1,21 @@
+.page__nav{
+    &-list{
+        list-style: none;
+        margin-right: 2rem;
+        text-transform: capitalize;
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        font-weight: 700;
+    }
+    &-item{
+        padding: 1rem 0;
+    }
+    &-link{
+        text-decoration: none;
+        color: $second-color;
+        & span{
+            color: $dots;
+        }
+    }
+
+}

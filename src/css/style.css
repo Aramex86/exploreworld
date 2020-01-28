@@ -72,6 +72,22 @@ html {
   height: 18px;
   margin-left: 1.5rem; }
 
+.footer__logo-icon {
+  width: 25px;
+  height: 25px;
+  margin-right: 1.5rem; }
+
+/*Big page icons*/
+.arrow__back {
+  width: 20px;
+  height: 20px;
+  fill: #fff; }
+
+.location {
+  width: 20px;
+  height: 20px;
+  fill: #ecec22; }
+
 .firstheading {
   font-size: 4rem;
   margin-left: 8rem; }
@@ -336,12 +352,53 @@ html {
       position: absolute;
       bottom: 2px; }
 
+.back-btn {
+  display: flex;
+  width: 12%;
+  justify-content: space-around;
+  text-transform: capitalize;
+  word-spacing: 6px; }
+
+.location__point {
+  display: flex;
+  align-items: center;
+  text-transform: capitalize;
+  letter-spacing: 2px; }
+
+.page__intro {
+  font-size: 9rem;
+  font-weight: 900;
+  margin-left: 9%;
+  letter-spacing: 4px; }
+  .page__intro span:nth-child(1) {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #fff; }
+
+.page__nav-list {
+  list-style: none;
+  margin-right: 2rem;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+  font-weight: 700; }
+
+.page__nav-item {
+  padding: 1rem 0; }
+
+.page__nav-link {
+  text-decoration: none;
+  color: #fff; }
+  .page__nav-link span {
+    color: #ecec22; }
+
 .header {
   position: relative;
   display: flex;
   justify-content: space-between;
   width: 100%;
-  border-bottom: 2px solid rgba(124, 124, 124, 0.4); }
+  border-bottom: 2px solid rgba(124, 124, 124, 0.4);
+  z-index: 6; }
   @media (max-width: 42.62em) {
     .header {
       justify-content: center;
@@ -439,5 +496,65 @@ html {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  padding: 20px 0;
+  padding: 1rem 0;
   border-top: 2px solid rgba(124, 124, 124, 0.4); }
+  .footer__logo-text {
+    font-size: 1.4rem;
+    font-weight: 700; }
+
+.indonesia__wrapp {
+  background: url(../img/indonesia/img3.jpg) no-repeat;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-size: 0 0;
+  transition: all 1s;
+  background-position: 13% 54%;
+  color: #fff;
+  opacity: 0; }
+  .indonesia__wrapp-header {
+    margin-top: 11rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5rem; }
+  .indonesia__wrapp-page {
+    margin-top: 14rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .indonesia__wrapp-footer {
+    margin-top: 14rem;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 5rem; }
+    .indonesia__wrapp-footer-box {
+      width: 33.33%; }
+      .indonesia__wrapp-footer-box-heading {
+        font-size: 2rem;
+        font-weight: 700;
+        position: relative;
+        margin-left: 3rem; }
+        .indonesia__wrapp-footer-box-heading::before {
+          content: "";
+          position: absolute;
+          width: 80%;
+          height: 2px;
+          background-color: #ecec22;
+          bottom: -8px;
+          left: -28px; }
+        .indonesia__wrapp-footer-box-heading::after {
+          content: "";
+          position: absolute;
+          width: 10px;
+          height: 10px;
+          background: #ecec22;
+          left: -20px;
+          top: 29%; }
+      .indonesia__wrapp-footer-box-text {
+        width: 81%;
+        margin-top: 2rem;
+        line-height: 25px; }
+
+.resizeimg {
+  background-size: 100% 100%;
+  z-index: 5; }

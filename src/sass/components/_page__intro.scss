@@ -1,0 +1,12 @@
+.page__intro{
+    font-size: 9rem;
+    font-weight: 900;
+    margin-left: 9%;
+    letter-spacing: 4px;
+    & span:nth-child(1){
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #fff;
+    }
+    
+}
