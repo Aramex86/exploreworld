@@ -3,6 +3,9 @@
     font-weight: 900;
     margin-left: 9%;
     letter-spacing: 4px;
+    & span{
+        display: block;
+    }
     & span:nth-child(1){
         -webkit-text-fill-color: transparent;
         -webkit-text-stroke-width: 2px;

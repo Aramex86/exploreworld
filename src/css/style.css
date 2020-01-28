@@ -54,6 +54,70 @@ html {
   animation: rotate 1s infinite;
   perspective: 1000px; }
 
+.moveright {
+  animation: moveright 1.5s ease-in;
+  opacity: 1;
+  transition: all 1.5s ease-in; }
+
+@keyframes moveright {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.moveleft {
+  animation: moveleft 1.5s ease-in;
+  opacity: 1;
+  transition: all 1.5s ease-in; }
+
+@keyframes moveleft {
+  0% {
+    opacity: 0;
+    transform: translateX(50px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+.movetop1 {
+  animation: movetop1 .8s ease-in;
+  opacity: 1;
+  transition: all .8s ease-in; }
+
+.movetop2 {
+  animation: movetop2 1.5s ease-in;
+  opacity: 1;
+  transition: all 1.5s ease-in; }
+
+@keyframes movetop1 {
+  0% {
+    opacity: 0;
+    transform: translateY(50px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes movetop2 {
+  0% {
+    opacity: 0;
+    transform: translateY(100px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+/* .boxMoveTop{
+    transition: all .5s ease-in;
+    animation: boxMoveTop .5s ease-in;
+} */
+@keyframes boxMoveTop {
+  0% {
+    opacity: 0;
+    transform: translateY(200px); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 .header__logo-icon {
   width: 30px;
   height: 30px; }
@@ -370,6 +434,8 @@ html {
   font-weight: 900;
   margin-left: 9%;
   letter-spacing: 4px; }
+  .page__intro span {
+    display: block; }
   .page__intro span:nth-child(1) {
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 2px;
@@ -377,9 +443,9 @@ html {
 
 .page__nav-list {
   list-style: none;
-  margin-right: 2rem;
+  margin-right: 5rem;
   text-transform: capitalize;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   letter-spacing: 2px;
   font-weight: 700; }
 
@@ -528,7 +594,20 @@ html {
     justify-content: space-around;
     padding: 0 5rem; }
     .indonesia__wrapp-footer-box {
-      width: 33.33%; }
+      width: 33.33%;
+      transition: all .5s ease-in; }
+      .indonesia__wrapp-footer-box:nth-child(1) {
+        animation: boxMoveTop .5s ease-in;
+        animation-duration: 2s;
+        animation-delay: .5s; }
+      .indonesia__wrapp-footer-box:nth-child(2) {
+        animation: boxMoveTop .5s ease-in;
+        animation-duration: 3s;
+        animation-delay: .5s; }
+      .indonesia__wrapp-footer-box:nth-child(3) {
+        animation: boxMoveTop .5s ease-in;
+        animation-duration: 4s;
+        animation-delay: .5s; }
       .indonesia__wrapp-footer-box-heading {
         font-size: 2rem;
         font-weight: 700;
